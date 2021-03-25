@@ -1,0 +1,46 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.contenedor-logo-shadow {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        background: #e7e4e7;
+        overflow: hidden;
+        bottom: 20px;
+        z-index: -10
+
+
+}
+.contenedor-logo-shadow__drop-shadow {
+        width: 100%;
+        stroke-width: 100px;
+        filter: drop-shadow(3px 1px 1px #d2cfd2) drop-shadow(-1px -1px 3px #fcf9fc); 
+        animation: animarDropShadow 1.5s steps(20, end)  forwards
+}
+ 
+/* Dura 1.5s y lo hace en 20 pasos, de inicio a fin */
+
+
+@keyframes animarDropShadow {
+
+
+
+0%{ opacity: 0
+}
+
+30%{
+filter: drop-shadow(0px 0px 0px #858585) drop-shadow(-0px -0px 0px #e7e4e7)
+}
+
+100% {
+filter: drop-shadow(3px 1px 1px #d2cfd2) drop-shadow(-1px -1px 3px #fcf9fc);
+transform: rotate(-30deg);
+
+}
+
+}

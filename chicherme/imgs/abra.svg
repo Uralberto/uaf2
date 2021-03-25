@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="181" height="221" viewBox="0 0 181 221">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #272b59;
+        stroke: #707070;
+        animation: girar 3s linear forwards
+      }
+
+  @keyframes girar {
+    
+    to{
+      d: "M1966,883h180v240H1966Z"
+    }
+
+  }
+
+
+
+
+    </style>
+  </defs>
+  <path id="abra" class="cls-1" d="M1966,883h180v220H1966Z" transform="translate(-1965.5 -882.5)"/>
+</svg>

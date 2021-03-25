@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="25.849" viewBox="0 0 33 25.849">
+  <defs>
+    <style>
+      .sty1, .sty2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 3px;
+      }
+
+      .sty1 {
+        stroke: #272839;
+      }
+
+      .sty2 {
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <g id="menu-burger" transform="translate(1.5 2.121)">
+    <path id="linea1" class="sty1" d="M0,0H30" transform="translate(0 2.5)"/>
+    <path id="linea2" class="sty2" d="M0,0H30" transform="translate(0 11)"/>
+    <path id="linea3" class="sty1" d="M0,0H30" transform="translate(0 19.5)"/>
+    <path id="linea4" class="sty2" d="M0,0H30" transform="translate(25.107 0) rotate(135)"/>
+    <path id="linea5" class="sty2" d="M0,0H30" transform="translate(3.893 0.393) rotate(45)"/>
+  </g>
+</svg>

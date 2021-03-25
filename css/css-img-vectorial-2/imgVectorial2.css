@@ -1,0 +1,41 @@
+
+
+.contenedor-img-vectorial-2{
+    display: none;
+    width: 100%;
+}
+
+
+.contenedor-img-vectorial-2.activo{
+    display: block
+}
+
+.contenedor-img-vectorial-2__titulo{
+font-size: 2.4rem;
+}
+.contenedor-img-vectorial-2__iframe {
+    position: relative;
+    padding-bottom: 170%;
+    height: 0;
+    overflow: hidden;
+}
+
+.contenedor-img-vectorial-2__iframe iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.contenedor-img-vectorial-2__descripcion  b {
+    font-size: 1rem;
+}
+
+
+
+.contenedor-img-vectorial-2__descripcion span {
+    font-size: 1rem;
+}

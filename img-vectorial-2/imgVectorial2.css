@@ -1,0 +1,145 @@
+:root {
+    --main-color-blue: #2337F1;
+    --color-blue1: #4262F3;
+    --color-blue2: #5E83F5;
+    --color-blue3: #7AA1F7;
+    --color-blue4: #98BDF9;
+    --color-blue5: #B6D4FB;
+    --color-blue6: #D7EAFC;
+    --main-color-darkblue: #272839;
+    --color-darkblue1: #262B59;
+    --color-darkblue1A: #272B59;
+    --color-darkblue2: #252E7D;
+    --color-darkblue3: #24309A;
+    --color-darkblue4: #2433b8;
+    --color-darkblue5: #2335D6;
+    --color-gray1: #F6F3F3;
+    --color-gray2: #e7e4e7;
+    --color-gray3: #B4B3B7;
+    --color-gray3a: #c6c5c972;
+    --color-gray4: #919097;
+    --color-gray5: #6E6E78;
+    --color-gray6: #494956;
+    --color-bg: #E7E4E7;
+    --color-bg-clic: #e1dee1;
+    --color-naranja: #f7cd52;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--main-color-darkblue);
+}
+
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+
+}
+
+.mom-container {
+    background-color: var(--color-darkblue1A);
+    width: 100%;
+    height: auto;
+    /* animation: destello1 .5s ease-in-out 2.5s backwards */
+
+}
+
+@keyframes destello1 {
+
+to{
+    background-color: #94865c;
+}
+
+}
+
+
+.botones-mom{
+width: 100%;
+display: grid;
+justify-content: center;
+margin-top: 20px;
+margin-bottom: 20px;
+grid-template: 30px  /  1fr 1fr 1fr 1fr
+
+}
+
+
+.botones-mom__boton {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.botones-mom .boton-play-pause {
+    width: 20px;
+    filter: drop-shadow(1px 1px 1px var(--color-gray3)) drop-shadow(-1px -1px 1px var(--color-gray1)); 
+
+}    
+
+
+.botones-mom__leyenda{
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.mom-container path {
+    stroke: .1px;
+}
+
+.gracias-por-la-visita {
+    display: none;
+    
+}
+
+.mom-copia1.activo {
+    animation: deGrisABlanco 6s ease-out ;
+}
+
+.mom-copia2.activo {
+    animation: deGrisABlanco 6s ease-out 
+
+}
+
+.mom-copia3.activo {
+    animation: deGrisABlanco 6s ease-out 
+
+}
+
+
+@keyframes deGrisABlanco {
+
+    10%{
+     stroke-width: 0;
+    }
+    60%{
+        stroke: var(--color-naranja);
+        fill: var(--color-naranja)
+    }
+
+    100%{
+        stroke-width: 0;
+        fill: white
+
+    }
+}

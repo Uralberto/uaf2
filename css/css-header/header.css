@@ -1,0 +1,612 @@
+
+:root {
+    --main-color-blue: #2337F1;
+    --color-blue1: #4262F3;
+    --color-blue2: #5E83F5;
+    --color-blue3: #7AA1F7;
+    --color-blue4: #98BDF9;
+    --color-blue5: #B6D4FB;
+    --color-blue6: #D7EAFC;
+    --main-color-darkblue: #272839;
+    --color-darkblue1: #262B59;
+    --color-darkblue1A: #272B59;
+    --color-darkblue2: #252E7D;
+    --color-darkblue3: #24309A;
+    --color-darkblue4: #2433b8;
+    --color-darkblue5: #2335D6;
+    --color-gray1: #F6F3F3;
+    --color-gray2: #e7e4e7;
+    --color-gray3: #B4B3B7;
+    --color-gray3a: #c6c5c972;
+    --color-gray4: #919097;
+    --color-gray5: #6E6E78;
+    --color-gray6: #494956;
+    --color-bg: #E7E4E7;
+    --color-bg-clic: #e1dee1;
+    --color-naranja: #f7cd52;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--main-color-darkblue);
+}
+
+
+
+a {
+    text-decoration: none
+}
+
+
+/* --Estilos header ----------------------------------------------------------------r */
+
+.contenedor-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    font-size: 1.6rem;
+    background-color: #E7E4E7;
+}
+
+/* Estilos header  /   Estilos logo   nombre  boton-hamburguesa   --------------*/
+
+.contenedor-header__logo-nombre-burger {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template: 50px / 50px 1fr 40px;
+    font-size: 1.6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e7e4e7;
+    box-shadow: 1px 1px 2px #c7c4c7, -1px -1px 2px #fcf9fc;
+}
+
+.logo svg {
+    width: 100%;
+}
+
+.logo svg .cl1, .logo svg .cl2, .logo svg .cl3, .logo svg .cls-4 {
+    fill: none;
+}
+
+.logo svg .cl1, .logo svg .cls-4 {
+    stroke: var(--main-color-darkblue);
+}
+
+.logo svg .cl1, .logo svg .cl3, .logo svg .cls-4 {
+    stroke-width: 15px;
+}
+
+.logo svg .cl3 {
+    stroke: #2337f1;
+}
+
+.logo svg .cl3, .logo svg .cls-4 {
+    stroke-linecap: round;
+}
+
+.logo svg .cls-5 {
+    stroke: none;
+}
+
+#anilloExterno {
+    stroke-dasharray: 1250;
+    stroke-dashoffset: 0;
+    animation: animacionLogoGeneral 0s ease-out forwards, animacionAnilloExterno 2s linear 2.5s forwards;
+}
+
+#letra-A-1 {
+    stroke-dasharray: 452;
+    stroke-dashoffset: 0;
+    animation: animacionLogoGeneral 2s ease-out forwards, animacionLetraA 2s linear  2.5s forwards;
+    transform-origin: 0 0;
+}
+
+
+#brazo-letra-U-1 {
+    animation: animacionLogoGeneral 2s ease-out forwards, animacionBrazoLetraU 2s linear 2.5s forwards;
+    stroke-dasharray: 197;
+    stroke-dashoffset: 0;
+}
+
+#parte-baja-letra-U-1 {
+    animation: animacionLogoGeneral 1s ease-out forwards, animacionParteBajaLetraU 2s linear 2.5s forwards;
+    stroke-dasharray: 288;
+    stroke-dashoffset: 0;
+}
+
+@keyframes animacionLogoGeneral {
+    0% {
+        transform: scale(1.04);
+        stroke-width: 0;
+    }
+    100% {
+        stroke-width: 20px;
+    }
+}
+
+@keyframes animacionLetraA {
+    from {
+        stroke-dashoffset: 452px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animacionBrazoLetraU {
+    from {
+        stroke-dashoffset: 197px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animacionParteBajaLetraU {
+    from {
+        stroke-dashoffset: 288px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animacionAnilloExterno {
+    from {
+        stroke-dashoffset: 1250px;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* Los  estilos .letra-A.animar  se activan con la función rotarLetraAPeriodicamente()  */
+.letra-A.animar {
+    /* Espera 5s para que que la letra A se ubique, en 1s,  en la posición correcta  en un solo paso(step) */
+    animation: rotarLetraA 1s steps(15, end) forwards;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rotarLetraA {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+/* Estilos header  /  estilos nombre    estilos apellidos ----------------------------*/
+
+
+.contenedor-header__nombre-eslogan {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    grid-template: auto auto / 1fr;
+}
+
+
+.contenedor-header__nombre {
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-header__eslogan{
+    width: 100%;
+    align-self: flex-start;
+}
+
+@media screen and (min-width: 425px){
+    .contenedor-header__nombre-eslogan {
+    padding-left: 13%;
+
+    }
+   
+    .contenedor-header__nombre {
+        width: 90%;
+    }
+    .contenedor-header__eslogan{
+        width: 90%;
+    }
+
+}
+
+/* Estilos header  / estilos menu burger ----------------------------------------  */
+
+.contenedor-header__menu-burger {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.contenedor-header__menu-burger svg {
+    width: 50%;
+}
+
+.contenedor-header__menu-burger:hover {
+    box-shadow: 1px 1px 2px #d2cfd2, -1px -1px 2px #fcf9fc;
+    transition: .3s;
+    height: 70%;
+    align-items: center;
+    position: relative;
+}
+
+/* -----Estilos header  / estilos panel de navegacion------------------------------------------ */
+
+.contenedor-header__panel-nav {
+    width: 100%;
+    margin-top: 16%;
+    font-size: 1.2rem;
+}
+
+
+/* Estilos de los  items principales   de panel de navegación -----------------------*/
+.contenedor-panel-nav__items {
+    width: 100%;
+    height: auto;
+    list-style: none;
+}
+
+
+.contenedor-panel-nav__item {
+    display: none;
+    align-items: center;
+    width: 84%;
+    height: 30px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 8%;
+    box-shadow: 1px 1px 1px #c7c4c7, -1px -1px 1px #fcf9fc;
+    border-radius: 15px;
+    list-style: none;
+    transform: translateY(-100px) ;
+    transform-origin: center;
+}
+
+.contenedor-panel-nav__item.activo{
+    display: flex;
+    animation: mostrarItemSuavemente .3s ease-in-out  forwards
+}
+
+
+@keyframes mostrarItemSuavemente {
+
+to{
+    transform: translateY(0px)
+}
+
+}
+
+.contenedor-panel-nav__item a {
+    text-decoration: none;
+    color: var(--main-color-darkblue)
+}
+
+
+.contenedor-panel-nav__items button {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none
+}
+
+
+
+/* -----Estilo de los ítems  de  navegacion  / vineta--------------------------------------- */
+
+.contenedor-panel-nav__vineta {
+    display: flex;
+    align-items: center;
+    width: 5%;
+    margin-left: 5%;
+    transform: translateX(-150px) rotateZ(0deg);
+    animation: moverVineta .5s cubic-bezier(1,-0.36, 0.06, 1.32) forwards;
+}
+
+@keyframes moverVineta {
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.contenedor-panel-nav__vineta svg {
+    margin-top: 3PX;
+}
+
+.contenedor-panel-nav__vineta #paths {
+    stroke: var(--main-color-darkblue);
+    stroke-width: 17px
+}
+
+.contenedor-panel-nav__vineta .round {
+    stroke-linecap: round;
+}
+
+.contenedor-panel-nav__vineta #letra-a {
+    stroke: var(--main-color-darkblue)
+}
+
+
+
+/* -----Estilo de los ítems  de  navegacion  /   item-texto--------------------------------------- */
+
+.contenedor-panel-nav__item-texto {
+    width: 80%;
+    margin-left: 5%;
+    transform-origin: left;
+    transform: rotateY(90deg);
+    animation: animarItemTexto 1s linear forwards;
+}
+
+@keyframes animarItemTexto {
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+/* -----Estilo de los ítems de  navegacion  /   flecha-abajo-------------------------------- */
+
+.contenedor-panel-nav__flecha-abajo {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    margin-right: 8px;
+    animation: animarFlechaAbajo 1s linear forwards, vibrarFlechaLevemente 1s ease-in-out 2s infinite;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+
+@keyframes animarFlechaAbajo {
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes vibrarFlechaLevemente {
+    from {
+        transform: translateY(-.5px);
+    }
+    to {
+        transform: translateY(.5px);
+    }
+}
+
+.contenedor-panel-nav__flecha-arriba {
+    transform: rotateX(180deg)
+}
+
+
+/* Estilos de los sub-itms  de cada ítem ( poa ahora solo Explora tiene subitems)   ----------------------------------------------*/
+
+.contenedor-panel-nav__sub-items {
+    width: 100%;
+}
+
+
+.contenedor-panel-nav__sub-items a {
+    color: var(--main-color-darkblue)
+}
+
+
+.btn-regresar {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none
+}
+
+
+.btn-regresar.activo {
+    display: flex;
+}
+
+
+.btn-regresar.margin-left{
+margin-left: 5%;
+}
+
+.btn-regresar img:hover{
+    transition: .2s;
+    filter: drop-shadow(.5px .5px .5px var(--main-color-darkblue)) drop-shadow(-.5px -.5px .5px var(--color-bg)); 
+}
+
+
+.btn-regresar img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.btn-regresar span {
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: .5
+
+}
+
+
+.enlaces-sub-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+.cabecera-item{
+display: none;
+align-items: center;
+height: 50px;
+}
+
+.cabecera-item.activo{
+    display: flex;
+}
+
+
+
+
+.cabecera-item__vineta {
+    display: flex;
+    align-items: center;
+    width: 5%;
+    margin-left: 5%;
+}
+
+.cabecera-item__vineta svg {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.cabecera-item__vineta #paths {
+    stroke: #262B59;
+    stroke-width: 17px
+}
+
+.cabecera-item__vineta .round {
+    stroke-linecap: round;
+}
+
+.cabecera-item__vineta #letra-a {
+    stroke: #262B59
+}
+
+
+
+/* clase que se activa con js para quitar letra "A"  */
+
+.vineta-quitar-a.activo {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 0;
+    animation: recortarA 2s ease-in-out forwards
+}
+
+
+/* clase que se activa con js para recortar parte de la letra "U" */
+
+.vineta-quitar-parte-u.activo {
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 0;
+    animation: recortarU 2s ease-in-out forwards
+}
+
+/* clase que se activa con js para pintar  carita de amarillo */
+
+.vineta-amarilla.activo {
+    animation: fillAmarillo 2s linear forwards
+}
+
+@keyframes recortarU {
+    to {
+        stroke-dashoffset: 490px;
+        stroke-width: 30px;
+    }
+}
+
+@keyframes recortarA {
+    to {
+        stroke-dashoffset: 490px;
+        stroke-width: 30px;
+    }
+}
+
+@keyframes fillAmarillo {
+    to {
+        fill: var(--color-naranja);
+    }
+}
+
+
+.enlaces-sub-item  .cabecera-item__titulo {
+    display: block;
+    width: 20%;
+    margin-left: 5%;
+    height: 25px;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+
+.enlaces-sub-item__ancla-btn {
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25px;
+    width: 90%;
+    margin-left: 8%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 1px #c7c4c7, -1px -1px 1px #fcf9fc;
+    border-radius: 15px;
+}
+
+
+.enlaces-sub-item__ancla-btn.activo {
+    display: flex;
+}
+
+
+.enlaces-sub-item__ancla-btn a {
+    text-decoration: none;
+}
+
+.sub-item-texto {
+    width: 70%;
+    margin-left: 10%;
+    font-size: 1rem;
+    cursor: auto;
+}
+
+.sub-item-btn {
+    width: 15px;
+    height: 25px;
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none
+}
+
+.sub-item-btn img{
+    width: 100%;
+    margin-left: 10px
+}
+

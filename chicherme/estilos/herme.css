@@ -1,0 +1,47 @@
+
+:root {
+   
+    --color-darkblue1: #262B59;
+    --color-darkblue1A: #272B59;
+    
+}
+
+
+.contenedor-herme {
+    width: 40%;
+    display: flex;
+    margin-left: 2.5%;
+    flex-direction: column;
+}
+
+.contenedor-herme__herme-svg {
+    background-color: var(--color-darkblue1A);
+    width: 100%;
+    border-radius: 2%;
+}
+
+
+.contenedor-herme__herme-svg path{
+    stroke: .1px;
+}
+
+#contenedor-herme__boton {
+margin-top: 15%;
+margin-bottom: 15%;
+font-size: 2rem;
+background-color: transparent;
+border: none;
+outline: none;
+}
+
+
+#contenedor-herme__boton img{
+   width: 20px;
+   filter: drop-shadow(1px 1px 1px var(--color-gray3)) drop-shadow(-1px -1px 1px var(--color-gray1)); 
+  }
+
+.boton-play-pause img{
+
+   filter: drop-shadow(1px 1px 1px var(--color-gray3)) drop-shadow(-1px -1px 1px var(--color-gray1)); 
+
+}

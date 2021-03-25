@@ -1,0 +1,236 @@
+:root {
+    --main-color-blue: #2337F1;
+    --color-blue1: #4262F3;
+    --color-blue2: #5E83F5;
+    --color-blue3: #7AA1F7;
+    --color-blue4: #98BDF9;
+    --color-blue5: #B6D4FB;
+    --color-blue6: #D7EAFC;
+    --main-color-darkblue: #272839;
+    --color-darkblue1: #262B59;
+    --color-darkblue1A: #272B59;
+    --color-darkblue2: #252E7D;
+    --color-darkblue3: #24309A;
+    --color-darkblue4: #2433b8;
+    --color-darkblue5: #2335D6;
+    --color-gray1: #F6F3F3;
+    --color-gray2: #e7e4e7;
+    --color-gray3: #B4B3B7;
+    --color-gray3a: #c6c5c972;
+    --color-gray4: #919097;
+    --color-gray5: #6E6E78;
+    --color-gray6: #494956;
+    --color-bg: #E7E4E7;
+    --color-bg-clic: #e1dee1;
+    --color-naranja: #f7cd52;
+}
+
+
+.presentacion-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0  0; */
+}
+
+.presentacion-item__detalle {
+    display: none;
+    min-height: auto;
+}
+
+.presentacion-item__detalle.activo{
+    display: block;
+
+}
+
+
+.presentacion-item__titulo-flecha {
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template: 1fr/ 1fr 60px;
+    grid-template-areas: " presentacion-sitio__titulo  presentacion-sitio__flecha-arriba";
+}
+
+
+
+.presentacion-item__titulo {
+    grid-area: presentacion-sitio__titulo;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+
+.presentacion-item__titulo-repetido {
+    grid-area: presentacion-sitio__titulo;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-size: 2.4rem;
+}
+
+
+.presentacion-item__flecha-arriba {
+    grid-area: presentacion-sitio__flecha-arriba;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-size: 2.4rem;
+}
+
+.presentacion-item__descripcion {
+    display: none;
+    padding-bottom: 8%;
+    height: auto;
+    word-wrap: break-word
+}
+
+
+.presentacion-item__cuaderno{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-top: 200px;
+    padding-bottom: 10px;
+}
+
+.presentacion-item__img-cuaderno{
+    display: inline-block;
+    width: 140px;
+    position: absolute;
+    top: 80px;
+    left: 8px
+}
+
+
+.presentacion-item__img-mesa-abaco{
+    width: 200px;
+    position: absolute
+
+}
+.presentacion-item__pie-de-cuaderno{
+    display: block;
+    padding-left: 10px;
+    font-size: .9rem;
+    padding-bottom: 10px;
+}
+
+.presentacion-item__descripcion.activo{
+    display: grid;
+
+}
+
+
+#ancla-mostrar-te-cuento {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+/* Estilos particulares de "Yo", es decir, el CV */
+
+
+.cv__nombre-profesion{
+    display: block;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding: 5%;
+    border-radius: 5px;
+    background-color: var(--color-bg-clic);
+}
+
+
+
+.cv__nombre-profesion h3 {
+    padding-top: 2px;
+    padding-bottom:2px;
+}
+
+.cv__informacion-detallada h3 {
+    margin-top: 10px;
+    padding: 5%;
+    border-radius: 5px;
+    background-color: var(--color-bg-clic)
+    
+}
+
+.cv__objetivo-profesional p {
+    padding: 4%;
+    border: 1px solid var(--color-gray3a);
+    border-radius: 10px
+}
+
+.cv__experiencia-subtitulo{
+padding: 4%;
+border: 1px solid var(--color-gray3a);
+border-radius: 5px
+}
+
+.cv__experiencia-descripcion{
+padding: 4%;
+border: 1px solid var(--color-gray3a);
+border-radius: 5px
+}
+
+.cv__historia-academ-subtitulo{
+    padding: 10px;
+}
+
+
+.cv__historia-academ-institucion{
+    
+    margin-top: 10px;
+    padding: 4%;
+    border: 1px solid var(--color-gray3a);
+    border-radius: 5px;
+    height: auto;
+}
+
+
+.cv__cursos{
+    padding-left: 6%;
+}
+
+
+.cv__info-adicional-detalle{
+    padding: 4%;
+    border: 1px solid var(--color-gray3a);
+    border-radius: 5px
+
+}
+
+.cv__podcast a{
+font-size: .9rem;
+margin-left: 15px;
+
+}
+
+.cv__guido-perez{
+    display: flex;
+}
+
+.cv__guido-perez a{
+    font-size: .9rem;
+}
+
+
+
+.cv__guido-perez span{
+    margin-right: 3px;
+}
+
+.cv__lista-areas-de-interes{
+    padding: 4%;
+    border: 1px solid var(--color-gray3a);
+    border-radius: 5px 
+}
+
+.cv__emails{
+    padding: 4%;
+    border: 1px solid var(--color-gray3a);
+    border-radius: 5px 
+
+}

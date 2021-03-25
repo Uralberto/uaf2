@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="30.491" viewBox="0 0 80 30.491">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fefdfc"/>
+      <stop offset="1" stop-color="#fcf6d7" stop-opacity="0.349"/>
+    </radialGradient>
+  </defs>
+  <path id="Trazado_37" data-name="Trazado 37" d="M2309.667,3761.167c4,2.667,23,10.167,37.667,8.833s22.667-5.4,30.667-12.4,11.667-17.933,11.667-17.933" transform="translate(-2309.667 -3739.667)" fill="url(#radial-gradient)"/>
+</svg>

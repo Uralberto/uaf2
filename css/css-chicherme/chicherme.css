@@ -1,0 +1,45 @@
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+.contenedor-chicherme{
+    
+    display: none
+}
+
+
+.contenedor-chicherme.activo{
+    display: block
+}
+
+
+.contenedor-chicherme__titulo{
+    font-size: 2.4rem;
+  }
+
+
+.contenedor-chicherme .btn-regresar--2 img{
+    width: 20px;
+}
+
+
+.contenedor-chicherme__iframe {
+    position: relative;
+    height: 0;
+    padding-bottom: 340%;
+    overflow: hidden;
+}
+
+
+.contenedor-chicherme__iframe iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} 

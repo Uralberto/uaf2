@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="220" viewBox="0 0 180 220">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #272b59;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="abra" class="cls-1">
+    <rect class="cls-2" width="180" height="220"/>
+    <rect class="cls-3" x="0.5" y="0.5" width="179" height="219"/>
+  </g>
+</svg>
