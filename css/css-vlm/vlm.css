@@ -35,7 +35,7 @@
 
   .contenedor-vlm__pie-de-isometrica{
     margin-top: 0;
-    font-size: .9rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
   }
 
@@ -47,7 +47,7 @@
 
   .contenedor-vlm__pie-isometrica-svg{
     margin-top: 0;
-    font-size: .9rem;
+    font-size: 1.2rem;
   }
 
 
@@ -62,7 +62,7 @@
 
   .contenedor-vlm__img-vlm p {
     margin-top: 0;
-    font-size: .9rem;
+    font-size: 1.2rem;
   }
 
 
@@ -78,6 +78,7 @@
 
 .boton-play-pause img {
   filter: drop-shadow(1px 1px 1px var(--color-gray3)) drop-shadow(-1px -1px 1px var(--color-gray1)); 
+  width: 35px;
 }
 
 

@@ -39,7 +39,7 @@ html{
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--main-color-darkblue); 
 }
 
@@ -57,7 +57,7 @@ border: none;
 outline: none;
 cursor: pointer;
 color: var(--color-blue2);
-font-size: 1.1rem;
+font-size: 1.3rem;
 font-weight: 300;
 opacity: .5;
 padding-top: 15px;
@@ -73,7 +73,7 @@ background-color: transparent;
     /* Al definirse altura cero, se puede dar a un elemento hijo una altura realtiva en % */
     /* El hijo es el elemento con la clase .abras, mas abajo */
     height: 0; 
-    padding-bottom: 120%;
+    padding-bottom: 130%;
     width: 100%;
     padding-top: 8%;
     margin-top: 10%;
@@ -111,7 +111,7 @@ outline: none;
 
 
 .contenedor-chiche__boton img{
-    width: 20px;
+    width: 25px;
     filter: drop-shadow(1px 1px 1px var(--color-gray3)) drop-shadow(-1px -1px 1px var(--color-gray1)); 
   }
 
@@ -137,12 +137,20 @@ outline: none;
     stroke-width: .1px;
 }
 
+
+.boton-play-pause img { 
+    width: 35px;
+}
+
+
+
+
 .chicherme__descripcion-motivo{
 margin: 0 8% 8% 8%;   
 border: 1px dashed rgb(225, 223, 198) ;
 background-color: transparent;
 margin: 7.5% 7.5% 7.5%;
-font-size: 1rem;;
+font-size: 1.3rem;;
 }
 
 .texto-alusivo{

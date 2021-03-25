@@ -41,7 +41,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--main-color-darkblue);
 }
 
@@ -91,14 +91,14 @@ grid-template: 30px  /  1fr 1fr 1fr 1fr
 }
 
 .botones-mom .boton-play-pause {
-    width: 20px;
+    width: 25px;
     filter: drop-shadow(1px 1px 1px var(--color-gray3)) drop-shadow(-1px -1px 1px var(--color-gray1)); 
 
 }    
 
 
 .botones-mom__leyenda{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 

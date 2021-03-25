@@ -15,8 +15,6 @@ const ponerVinetaAmarilla = document.querySelector(".cabecera-item .vineta-amari
 
 const eslogan = document.querySelectorAll(".contenedor-header__eslogan path")
 
-console.log(eslogan)
-
 
 //  Para mutar el ícono del menu hamburguesa (de 3 barras a una equix)
 const mutarMenuBurger = () => {

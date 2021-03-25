@@ -53,7 +53,7 @@ root {
 
 .contenedor-canvas{
 width: 100%;    
-height: 40px;
+height: 52px;
 position: relative;
 }
 
@@ -98,8 +98,8 @@ position: relative;
 }
 
 .contenedor-cocuy__pie-de-foto{
-    font-size: .9rem;
-    margin-bottom: 5%;
+    font-size: 1.2rem;
+    margin-bottom: 1%;
 }
 
 
@@ -109,7 +109,10 @@ position: relative;
 
 
 .centrar-btn-play-pause img {
-   /* padding-top: 6%; */
+   
    display: block;
    margin: 0 auto;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
 }

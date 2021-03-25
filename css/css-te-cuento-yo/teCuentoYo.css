@@ -45,38 +45,12 @@
 }
 
 
-.presentacion-item__titulo-flecha {
-    display: flex;
-    align-items: center;
-    display: grid;
-    grid-template: 1fr/ 1fr 60px;
-    grid-template-areas: " presentacion-sitio__titulo  presentacion-sitio__flecha-arriba";
-}
-
-
-
 .presentacion-item__titulo {
     grid-area: presentacion-sitio__titulo;
     padding-top: 8%;
     padding-bottom: 8%;
     font-size: 2.4rem;
     font-weight: 400;
-}
-
-
-.presentacion-item__titulo-repetido {
-    grid-area: presentacion-sitio__titulo;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    font-size: 2.4rem;
-}
-
-
-.presentacion-item__flecha-arriba {
-    grid-area: presentacion-sitio__flecha-arriba;
-    padding-top: 8%;
-    padding-bottom: 8%;
-    font-size: 2.4rem;
 }
 
 .presentacion-item__descripcion {
@@ -114,7 +88,7 @@
 .presentacion-item__pie-de-cuaderno{
     display: block;
     padding-left: 10px;
-    font-size: .9rem;
+    font-size: 1.2rem;
     padding-bottom: 10px;
 }
 
@@ -203,7 +177,7 @@ border-radius: 5px
 }
 
 .cv__podcast a{
-font-size: .9rem;
+font-size: 1.2rem;
 margin-left: 15px;
 
 }
@@ -213,7 +187,7 @@ margin-left: 15px;
 }
 
 .cv__guido-perez a{
-    font-size: .9rem;
+    font-size: 1.2rem;
 }
 
 

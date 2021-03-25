@@ -4,7 +4,7 @@ Uaf2 es el repositorio de mi segundo sitio web personal. Llega para reemplazar a
 
 Uaf2 es un sitio totalmente nuevo si se comparan contenidos y diseño. No guarda mucha cercanía con el primero salvo por asuntos como el logo   y  algunos aspectos relacionados con el manejo del color. No tiene nada distinto a *Html, Css y JavaScript* puro. Podría decir que el único recurso externo es la tipografía. La mayoría de los efectos de animación están a cargo de *JavaScript*. Las animaciones con *Css* son complementarias. Privilegia el uso de imágenes *SVG* por encima de los demás formatos existentes. 
 
-Está pensado, por ahora (marzo/2021), para ser visto en teléfonos inteligentes con ancho  de pantalla gráfica no mayor a 430px.  La idea es tenerlo habilitado en el menor tiempo posible  para múltiples dispositivos.
+Está pensado, por ahora (marzo/2021), para ser visto en teléfonos inteligentes con ancho  de pantalla gráfica no mayor a 600px.  La idea es tenerlo habilitado en el menor tiempo posible  para múltiples dispositivos.
 
 Toma  ideas del Neoformismo para el manejo de bordes,  sombras y luces, particularmente en  los botones y las opciones de navegación de los menús. Cada opción de navegación dirige al usuario a un contenido específico y saca de la vista cualquier otro que no esté vinculado. Se quiere evitar que una vez el usuario llegue a un contenido particular,  no exista otro (arriba,  abajo o los lados)  que pueda dar la impresión de ser parte. 
 

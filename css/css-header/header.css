@@ -41,7 +41,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--main-color-darkblue);
 }
 
@@ -62,7 +62,7 @@ a {
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     background-color: #E7E4E7;
 }
 
@@ -73,7 +73,6 @@ a {
     display: grid;
     align-items: center;
     grid-template: 50px / 50px 1fr 40px;
-    font-size: 1.6rem;
 }
 
 .logo {
@@ -270,7 +269,7 @@ a {
 .contenedor-header__panel-nav {
     width: 100%;
     margin-top: 16%;
-    font-size: 1.2rem;
+
 }
 
 
@@ -279,6 +278,8 @@ a {
     width: 100%;
     height: auto;
     list-style: none;
+    font-size: 1.9rem;
+
 }
 
 
@@ -286,7 +287,7 @@ a {
     display: none;
     align-items: center;
     width: 84%;
-    height: 30px;
+    height: 40px;
     margin-top: 12px;
     margin-bottom: 12px;
     margin-left: 8%;
@@ -406,15 +407,12 @@ to{
     }
 }
 
-.contenedor-panel-nav__flecha-arriba {
-    transform: rotateX(180deg)
-}
-
 
 /* Estilos de los sub-itms  de cada ítem ( poa ahora solo Explora tiene subitems)   ----------------------------------------------*/
 
 .contenedor-panel-nav__sub-items {
     width: 100%;
+    font-size: 1.7rem;
 }
 
 
@@ -458,9 +456,8 @@ margin-left: 5%;
 }
 
 .btn-regresar span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 100;
-    opacity: .5
 
 }
 
@@ -570,7 +567,7 @@ height: 50px;
     display: none;
     justify-content: flex-start;
     align-items: center;
-    height: 25px;
+    height: 40px;
     width: 90%;
     margin-left: 8%;
     margin-top: 5px;
@@ -590,9 +587,9 @@ height: 50px;
 }
 
 .sub-item-texto {
-    width: 70%;
-    margin-left: 10%;
-    font-size: 1rem;
+    width: 75%;
+    margin-left: 9%;
+    font-size: 1.7rem;
     cursor: auto;
 }
 
@@ -606,7 +603,7 @@ height: 50px;
 }
 
 .sub-item-btn img{
-    width: 100%;
+    width: 120%;
     margin-left: 10px
 }
 
