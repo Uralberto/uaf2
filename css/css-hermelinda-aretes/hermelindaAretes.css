@@ -43,8 +43,8 @@
 }
 
 .contenedor-aretes__descrip-img94{
-    font-size: 1.2rem;
-    margin-left: 6%;
+    font-size: 1.4rem;
+    margin-left: 15px;
     align-self: flex-end;
 } 
 
@@ -58,8 +58,8 @@
 
 .pie-svg-mama{
     padding-top: 2%;
-    font-size: 1.2rem;
-    padding-bottom: 2%;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
     align-self: flex-start;
 
 }

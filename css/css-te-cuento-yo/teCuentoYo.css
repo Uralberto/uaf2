@@ -88,7 +88,7 @@
 .presentacion-item__pie-de-cuaderno{
     display: block;
     padding-left: 10px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding-bottom: 10px;
 }
 
@@ -100,7 +100,6 @@
 
 #ancla-mostrar-te-cuento {
     text-decoration: none;
-    font-size: 1.2rem;
 }
 
 
@@ -177,7 +176,7 @@ border-radius: 5px
 }
 
 .cv__podcast a{
-font-size: 1.2rem;
+font-size: 1.4rem;
 margin-left: 15px;
 
 }
@@ -187,7 +186,7 @@ margin-left: 15px;
 }
 
 .cv__guido-perez a{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 

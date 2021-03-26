@@ -41,7 +41,7 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--main-color-darkblue);
 }
 
@@ -62,7 +62,7 @@ a {
     justify-content: center;
     align-items: center;
     padding-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     background-color: #E7E4E7;
 }
 
@@ -456,7 +456,7 @@ margin-left: 5%;
 }
 
 .btn-regresar span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 100;
 
 }
@@ -485,7 +485,7 @@ height: 50px;
 .cabecera-item__vineta {
     display: flex;
     align-items: center;
-    width: 5%;
+    width: 7%;
     margin-left: 5%;
 }
 
@@ -569,7 +569,7 @@ height: 50px;
     align-items: center;
     height: 40px;
     width: 90%;
-    margin-left: 8%;
+    margin-left: 6%;
     margin-top: 5px;
     margin-bottom: 5px;
     box-shadow: 1px 1px 1px #c7c4c7, -1px -1px 1px #fcf9fc;
@@ -588,7 +588,7 @@ height: 50px;
 
 .sub-item-texto {
     width: 75%;
-    margin-left: 9%;
+    margin-left: 20px;
     font-size: 1.7rem;
     cursor: auto;
 }
@@ -607,3 +607,11 @@ height: 50px;
     margin-left: 10px
 }
 
+code {
+    text-decoration-skip-ink: none ;
+    padding: 0 3px;
+    box-decoration-break: clone;
+    word-wrap: break-word;
+    letter-spacing: .1px;
+   font-family: consolas,"Liberation Mono",courier,monospace
+}

@@ -52,13 +52,13 @@ function togglePintarPathsCiclos() {
   if (controlCorbata===0) {
     pintarPathsCiclos()
     controlCorbata = 1  
-    botonCorbata.innerHTML = '<img src="../imgs/btn-pause.svg  " alt="botón play">'
+    botonCorbata.innerHTML = '<img src="./imgs/btn-pause.svg  " alt="botón play">'
 
   }
   else {
     pararPintarPathsCiclos()
     activarPathsOriginales()
     controlCorbata = 0
-    botonCorbata.innerHTML = '<img src="../imgs/btn-play.svg  " alt="botón play">'
+    botonCorbata.innerHTML = '<img src="./imgs/btn-play.svg  " alt="botón play">'
   }
 }

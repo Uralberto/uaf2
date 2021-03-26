@@ -17,13 +17,13 @@ El logo en alto relieve que se muestra al cargar el sitio es una imagen *SVG* co
 
 `.contenedor-logo-shadow__drop-shadow   {`
 
- `*width*: 100%;`
+ `width: 100%;`
 
  `*stroke-width*: 100px;`
 
- `*filter*: drop-shadow(3px 1px 1px #d2cfd2) drop-shadow(-1px -1px 3px #fcf9fc);` 
+ `filter: drop-shadow(3px 1px 1px #d2cfd2) drop-shadow(-1px -1px 3px #fcf9fc);` 
 
- `*animation*: animarDropShadow 1.5s steps(20, end) forwards`
+ `animation: animarDropShadow 1.5s steps(20, end) forwards`
 
 `}`
 
