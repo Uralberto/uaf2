@@ -161,11 +161,11 @@ function activarAnimarVlmPaths() {
   if (controlVlm===0){
   activarOcultarVlmPaths()
   animarVlmPaths()
-  botonVlm.innerHTML = '<img src="../imgs/btn-pause.svg  " alt="botón pausa">'
+  botonVlm.innerHTML = '<img src="./imgs/btn-pause.svg  " alt="botón pausa">'
   controlVlm = 1
 }
 else{
-   botonVlm.innerHTML = '  <img src="../imgs/btn-play.svg  " alt="botón play">'
+   botonVlm.innerHTML = '  <img src="./imgs/btn-play.svg  " alt="botón play">'
    activarMostarVlmPaths()
    controlVlm = 0
 }
