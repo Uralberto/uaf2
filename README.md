@@ -1,5 +1,5 @@
 
-# uaf2**
+# uaf2
 
 El repositorio **uaf2**  contiene  mi segundo sitio web personal. Llega en reemplazo de  **uaf1**, repositorio  donde aún se encuentra el primero, subido a la red en 2019.  Es un sitio muy diferente,  no  guarda mucha cercanía con el primero salvo por asuntos como el logo  y  el  manejo del color. No tiene nada distinto a *Html*, *Css* y *JavaScript* puro. Podría decir que el único recurso externo es la tipografía. La mayoría de los efectos de animación están a cargo de *JavaScript*. Las animaciones con Css son complementarias. Privilegia el uso de imágenes *SVG* por encima de los demás formatos existentes. 
 
@@ -15,17 +15,18 @@ El menú hamburguesa no tiene nada de particular. Quise innovar  un tris  dejand
 
 El logo en alto relieve que se muestra al cargar el sitio es una imagen *SVG* con color igual al color *background*  de todo el sitio. Le he puesto el nombre de *logo-shadow*. El efecto se logra aplicando la propiedad *filter* con *Css* en donde *#fcf9fc* es el color que ilumina los elementos del logo por el lado izquierdo y *#d2cfd2* es el color que les da el toque de sombra por el lado derecho. Así se ve el *Css:*
 
-`.contenedor-logo-shadow__drop-shadow {`
+`.contenedor-logo-shadow__drop-shadow   {`
 
-  `width: 100%;`
+ `*width*: 100%;`
 
-  `stroke-width: 100px;`
+ `*stroke-width*: 100px;`
 
-  `filter: drop-shadow(3px 1px 1px #d2cfd2) drop-shadow(-1px -1px 3px #fcf9fc);`
+ `*filter*: drop-shadow(3px 1px 1px #d2cfd2) drop-shadow(-1px -1px 3px #fcf9fc);` 
 
-  `animation: animarDropShadow 1.5s steps(20, end) forwards`
+ `*animation*: animarDropShadow 1.5s steps(20, end) forwards`
 
-`}
+`}`
+
 
 
 
