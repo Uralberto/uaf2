@@ -5840,41 +5840,42 @@
         alt="flecha regresar" data-origen="explora" data-regresar2="img-vectorial-2"><span>Regresar</span></button><br>
       <span class="contenedor-img-vectorial-2__titulo sub-item-detalle__titulo"    > Imagen vectorial animada 2 </span><br><br>
       
-      
-  
-      
       <p class="contenedor-img-vectorial-2__descripcion">
-        Este proyecto  considera de nuevo la imagen vectorial del  proyecto Hermelinda incluido en este sitio. Si ya lo visitaste probablemente sabrás  que la imagen  consta de  304 piezas grises diferentes. Las piezas están marcadas con  etiquetas <<b>path</b>>. Estas a su vez las envuelve un contenedor  <<b>g</b>> (grupo). El contenedor <<b>g</b>>, por su parte, es contenido por  un contenedor <<b>defs</b>>. Finalmente,  <<b>defs</b>> es contenido  por la etiqueta  <<b>svg</b>>. El documento  <i>html</i>  se ve mas o menos así:<br><br>
-       
-        <<b>svg</b>><br>
-        &nbsp; &nbsp; <<b>defs</b>><br>
-        &nbsp; &nbsp; &nbsp; &nbsp; <<b>g &nbsp; id=”img-uno”</b>> <br> 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <<b>path/</b>> <br> 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <<b>path/</b>> <br> 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <<b>path/</b>> <br> 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<br>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<br>
-        &nbsp; &nbsp; &nbsp; &nbsp;<<b>g</b> > <br> 
-        &nbsp; &nbsp; <<b>/defs</b>><br>
-        <<b>/svg</b>><br><br>
-          
-        En <<b>g</b>> se pueden incluir clases  para aplicar estilos a los <<b>path/</b>>  que envuelve. La etiqueta  <<b>defs</b>> es un contenedor a introducir si se quiere usar la imagen en otro lugar del documento <i>html</i>. Para ello se utiliza la etiqueta  <<b>use</b>>. Una manera de hacerlo es es ubicarla justo antes de cerrar la etiqueta <<b>svg</b>>. Así: <br><br>
-          
-        <<b>svg</b>  <br>
-        <span>insertar propiedades, clases...</span>
-        ><br>
-        &nbsp; &nbsp; <<b>use &nbsp; href="#img-uno" > <b><</b>/use</b>><br>
-        <<b>/ svg</b>><br><br>
+        Este proyecto  considera de nuevo la imagen vectorial del  proyecto Hermelinda incluido en este sitio. Si ya lo visitaste probablemente sabrás  que la imagen  consta de  304 piezas grises diferentes. Las piezas están marcadas con  etiquetas <code>&lt;path></code>. Estas a su vez las envuelve un contenedor  <code>&lt;g></code> (grupo). El contenedor  <code>&lt;g></code>, por su parte, es contenido por  un contenedor  <code>&lt;defs></code>. Finalmente, <code>&lt;defs></code> es contenido  por la etiqueta <code>&lt;svg></code>. El documento  <i>html</i>  se ve mas o menos así:<br>
+<pre>       
+<code>&lt;svg></code>
+  <code>&lt;defs></code>
+    <code>&lt;g  id= "img-uno"></code> 
+      <code>&lt;path/></code> 
+      <code>&lt;path/></code> 
+      .
+      .
+    <code>&lt;/g></code>
+  <code>&lt;/defs></code>
+<code>&lt;/svg></code>
+</pre> <br>
+        En <code>&lt;g></code>  se pueden incluir clases  para aplicar estilos a los <code>&lt;path></code> que envuelve. La etiqueta  <code>&lt;defs></code>  es un contenedor a introducir si se quiere usar la imagen en otro lugar del documento <i>html</i>. Para ello se utiliza la etiqueta   <code>&lt;use></code>. Una manera de hacerlo es es ubicarla justo antes de cerrar la etiqueta <code>&lt;svg></code>. Así: <br><br>
+        
+<pre>     
+<code>&lt;svg
+ propiedades, clases...
+></code>  
+  <code>&lt;g></code> 
+    <code>&lt;use href="img-uno">&lt;/use></code>
+  <code>&lt;/g></code> 
+<code>&lt;/svg></code>
+</pre> <br><br>  
 
 
-        <b>"#img-uno"</b>  se refiere al selector <b>id</b> dentro del contenedor <<b>g  &nbsp; id=”img-uno”</b>> más arriba.<br><br>
+
+<code>"#img-uno"</code> se refiere al selector <code>id</code> dentro del contenedor <code>&lt;g  id="img-uno"></code> más arriba.<br><br>
            
-         Cada pieza, definida por un <<b>path/</b>> particular,  se traslada, rota o escala dependiendo de la animación que se active con los botones previstos (ver más abajo). En la imagen inicial las piezas tienen un tamaño 5 veces menor al  original. Es para observar la progresión desde una escala menor hasta alcanzar la escala original (Tocar el botón Escalar). El punto de origen del escalamiento es el centro del contenedor de cada pieza. <br><br>
+         Cada pieza, definida por un  <code>&lt;path></code> particular,  se traslada, rota o escala dependiendo de la animación que se active con los botones previstos (ver más abajo). En la imagen inicial las piezas tienen un tamaño 5 veces menor al  original. Es para observar la progresión desde una escala menor hasta alcanzar la escala original (Tocar el botón Escalar). El punto de origen del escalamiento es el centro del contenedor de cada pieza. <br><br>
 
          Con el botón Rotar las piezas rotan con referencia a un centro de giro exterior a su propio contenedor. El centro de giro  es aleatorio, significa que la animación será diferente con  cada toque de botón.  Con el botón Dispersar se activan de igual manera animaciones aleatorias pero esta vez con movimientos de traslación en sentido <i><b>X</b></i> o <i><b>Y</b></i> . Al parecer los movimientos de giro y traslación no pueden ser simultáneos, un tema pendiente de examen. <br><br>
 
          Finalmente, el botón Desvanecer activa la rotación de las piezas alrededor de un eje central horizontal (eje <i><b>X</b></i>). Cada pieza tiene su propio eje central de giro. Si se observa con cuidado es posible detectar tres imágenes superpuestas en posiciones ligeramente diferentes. Se hace con la etiqueta   
-         <<b>use</b>>  , según se indicó arriba. Esto le da un toque interesante  a la animación o al menos muy distinto cuando  se utiliza una  imagen<br><br>
+         <code>&lt;use></code>, según se indicó arriba. Le da un toque interesante  a la animación o al menos muy distinto si una sola imagen se utiliza<br><br>
 
          Si vamos a las opciones que <i>JavaScript</i> ofrece para animar  tendríamos un menú infinito de posibilidades. El reto  es  lograr animaciones creativas o al menos interesantes.   
 
@@ -5891,6 +5892,7 @@
     </section>
 
   </main>
+
 
  <!-- Inicia footer ------------------------------------------------------------------------------ -->
 
