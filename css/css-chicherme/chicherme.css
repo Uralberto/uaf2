@@ -36,6 +36,27 @@ html{
 }
 
 
+@media screen and (min-width: 520px){
+    .contenedor-chicherme__iframe {
+        padding-bottom: 1350px;
+    }
+}
+
+
+@media screen and (min-width: 620px){
+    .contenedor-chicherme__iframe {
+        padding-bottom: 1450px;
+    }
+}
+
+
+@media screen and (min-width: 700px){
+    .contenedor-chicherme__iframe {
+        padding-bottom: 1550px;
+    }
+}
+
+
 .contenedor-chicherme__iframe iframe {
     position: absolute;
     top:0;
