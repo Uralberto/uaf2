@@ -69,3 +69,11 @@ padding-top: 8%
 .contenedor-redes__icono img {
     width: 80%;
 }
+
+
+@media screen and (min-width: 520px){
+    .contenedor-redes__icono img {
+        width: 115%;
+    }
+
+}
